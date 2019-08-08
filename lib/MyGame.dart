@@ -1,16 +1,19 @@
 import 'dart:ui';
 import 'package:flame/game.dart';
 import 'package:flame/flame.dart';
+import 'package:flutter_game/components/person.dart';
 
 class MyGame extends Game {
   Size screenSize;
   double tileSize;
+  List<Person> persons;
 
   MyGame() {
     initialize();
   }
 
   void initialize() async {
+    persons = List<Person>();
     resize(await Flame.util.initialDimensions());
   }
 

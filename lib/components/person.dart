@@ -9,7 +9,7 @@ class Person {
   Person(this.game, double x, double y) {
     personRect = Rect.fromLTWH(x, y, game.tileSize, game.tileSize);
     personPaint = Paint();
-    personPaint.color = Color(0xff6ab04c);
+    personPaint.color = Color(0x000000000);
   }
 
   void render(Canvas c) {
